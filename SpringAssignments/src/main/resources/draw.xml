@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd" >
+
+	<bean id="circle" class="io.spring_assignment5.Circle">
+		
+	</bean>
+	
+	<bean id="point" class="io.spring_assignment5.Point">
+		<property name="x" value="0"/>
+		<property name="y" value="0"/>
+	</bean>
+	
+	<bean id="point1" class="io.spring_assignment5.Point">
+		<property name="x" value="10"/>
+		<property name="y" value="10"/>
+	</bean>
+	
+	<bean id="line" class="io.spring_assignment5.Line">
+		<property name="pointA" ref="point"/>
+		<property name="pointB" ref="point1"/>
+	</bean>
+
+</beans>

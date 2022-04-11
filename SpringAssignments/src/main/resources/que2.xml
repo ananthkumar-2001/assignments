@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="question" class="io.spring_assignment2.Question">
+        	<property name="questionId" value="1"/>
+        	<property name="question" value="Question :  Do you Know?"/>
+        	<property name="answersList">
+        	<list>
+        		<value>Answer1 : DontKnow</value>
+        		<value>Answer2 : I Know</value>
+        		<value>Answer3 : He Know</value>
+        	</list>
+        	</property>
+        	<property name="answersSet">
+        	<set>
+        		<value>Answer1 : DontKnow</value>
+        		<value>Answer2 : I Know</value>
+        		<value>Answer3 : He Know</value>
+        	</set>
+        	</property>
+        	<property name="answersMap">
+        	<map>
+        		<entry key="1" value="Answer1 : DontKnow"/>
+        		<entry key="2" value="Answer2 : I Know"/>
+        		<entry key="3" value="Answer3 : He Know"/>
+        	</map>
+        	</property>
+        </bean>
+</beans>
